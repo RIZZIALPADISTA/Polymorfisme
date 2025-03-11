@@ -1,0 +1,39 @@
+package rizzi.ti23e;
+
+public class Product {
+    
+    String name;
+    double price;
+    
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public double getPrice(){
+        return price;
+    }
+    
+    public double getPrice(double discount){
+        return price - (price * (discount / 100));
+    }
+    
+    public void setPrice(double price){
+        this.price = price;
+    }
+    
+    public void infoProduct(){
+        System.out.println("Nama Barang: " + getName());
+        System.out.println("Harga Barang; " + this.price);
+    }
+    
+}
+
